@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textSalutacio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#00311919"
+        android:text="Hello Usuari!"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        app:layout_constraintTop_toTopOf="@id/textSalutacio">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <HorizontalScrollView
+            android:id="@+id/scroll1"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titolGlobosOro">
+
+        <!-- LinearLayout contenedor horizontal -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginStart="10dp">
+
+            <!-- Primer item con imagen y texto -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="230dp"
+                    android:layout_height="120dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="0dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp">
+
+                    <ImageView
+                        android:id="@+id/imatgeBcn"
+                        android:layout_width="230dp"
+                        android:layout_height="wrap_content"
+                        android:background="#000000"
+                        android:padding="5dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/barcelona"
+                        />
+
+                </androidx.cardview.widget.CardView>
+
+
+                <TextView
+                    android:id="@+id/textBcn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="Barcelona"
+                    android:textColor="#FFFFFF"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                   />
+            </LinearLayout>
+
+            <!-- Segundo item con imagen y texto -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="230dp"
+                    android:layout_height="120dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="0dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp">
+
+                    <ImageView
+                        android:id="@+id/imatgeBesalu"
+                        android:layout_width="230dp"
+                        android:layout_height="wrap_content"
+                        android:background="#000000"
+                        android:padding="5dp"
+                        android:src="@drawable/besalu"
+                        android:scaleType="centerCrop"
+                        />
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:id="@+id/textBesalu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="Besalú "
+                    android:textColor="#FFFFFF"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    />
+            </LinearLayout>
+
+            <!-- Segundo item con imagen y texto -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="230dp"
+                    android:layout_height="120dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="0dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp">
+
+                    <ImageView
+                        android:id="@+id/imatgeCadaques"
+                        android:layout_width="230dp"
+                        android:layout_height="wrap_content"
+                        android:background="#000000"
+                        android:padding="5dp"
+                        android:src="@drawable/cadaques"
+                        android:scaleType="centerCrop"
+                        />
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:id="@+id/textCadaques"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="Cadaqués "
+                    android:textColor="#FFFFFF"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                   />
+            </LinearLayout>
+
+            <!-- Segundo item con imagen y texto -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="230dp"
+                    android:layout_height="120dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="0dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp">
+
+                    <ImageView
+                        android:id="@+id/imatgeCalonge"
+                        android:layout_width="230dp"
+                        android:layout_height="wrap_content"
+                        android:background="#000000"
+                        android:padding="5dp"
+                        android:src="@drawable/calonge"
+                        android:scaleType="centerCrop"
+                        />
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:id="@+id/textCalonge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="Calonge "
+                    android:textColor="#FFFFFF"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    />
+            </LinearLayout>
+
+            <!-- Segundo item con imagen y texto -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="230dp"
+                    android:layout_height="120dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="0dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp">
+
+                    <ImageView
+                        android:id="@+id/imatgeGirona"
+                        android:layout_width="230dp"
+                        android:layout_height="wrap_content"
+                        android:background="#000000"
+                        android:padding="5dp"
+                        android:src="@drawable/girona"
+                        android:scaleType="centerCrop"
+                        />
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:id="@+id/textGirona"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="Girona "
+                    android:textColor="#FFFFFF"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    />
+            </LinearLayout>
+
+            <!-- Segundo item con imagen y texto -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="230dp"
+                    android:layout_height="120dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="0dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp">
+
+                    <ImageView
+                        android:id="@+id/imatgePalamos"
+                        android:layout_width="230dp"
+                        android:layout_height="wrap_content"
+                        android:background="#000000"
+                        android:padding="5dp"
+                        android:src="@drawable/palamos"
+                        android:scaleType="centerCrop"
+                        />
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:id="@+id/textPalamos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="Palamós "
+                    android:textColor="#FFFFFF"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        </HorizontalScrollView>
+
+            <ViewFlipper
+                android:id="@+id/viewFlipper"
+                android:layout_width="match_parent"
+                android:layout_height="270dp"
+                android:layout_marginTop="0dp"
+                android:flipInterval="2000"
+                android:autoStart="true"
+                android:focusable="true"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/scroll"
+                >
+
+                <ImageView
+                    android:id="@+id/imatgeFlip1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/casa1" />
+                <ImageView
+                    android:id="@+id/imatgeFlip2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/casa2"
+                    />
+                <ImageView
+                    android:id="@+id/imatgeFlip3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/casa3"
+                    />
+                <ImageView
+                    android:id="@+id/imatgeFlip4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/casa4"
+                    />
+
+            </ViewFlipper>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp">
+
+                <Button
+                    android:id="@+id/botoLloguer"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#338DBC"
+                    android:text="Lloguer"
+                    app:cornerRadius="5dp" />
+
+                <Button
+                    android:id="@+id/botoComprar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Compra"
+                    android:layout_weight="1"
+                    android:backgroundTint="#338DBC"
+                    android:layout_marginLeft="5dp"
+                    app:cornerRadius="5dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp">
+
+                <Button
+                    android:id="@+id/botoNovetats"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Novetats"
+                    android:layout_weight="1"
+                    android:backgroundTint="#338DBC"
+                    android:layout_marginRight="5dp"
+                    app:cornerRadius="5dp"/>
+
+                <Button
+                    android:id="@+id/botoPreuBaix"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Baixada preu"
+                    android:layout_weight="1"
+                    android:backgroundTint="#338DBC"
+                    android:layout_marginLeft="5dp"
+                    app:cornerRadius="5dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/barraNave"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#000000"
+        app:itemIconTint="#FFFFFF"
+        app:itemRippleColor="#63b0d8"
+        app:itemTextColor="#FFFFFF"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:itemActiveIndicatorStyle="@style/Theme.BottomNavigationView.ActiveIndicator"
+        app:menu="@menu/bottom_nav_view_menu"
+        >
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

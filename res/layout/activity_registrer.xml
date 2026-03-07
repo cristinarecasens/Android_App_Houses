@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".RegistrerActivity">
+
+    <EditText
+        android:id="@+id/editNomRegistre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
+        android:hint="Nom usuari"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#AAAAAA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imatgeRegistre" />
+
+    <EditText
+        android:id="@+id/editContraRegistre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Contrasenya"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#AAAAAA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editNomRegistre" />
+
+    <Button
+        android:id="@+id/botoGuardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:backgroundTint="#338DBC"
+        android:text="Registrar"
+        android:textColorLink="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editContraRegistre"
+        app:rippleColor="#002C2C2C"
+        app:strokeColor="#005B0000" />
+
+    <ImageView
+        android:id="@+id/imatgeRegistre"
+        android:layout_width="182dp"
+        android:layout_height="161dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="31dp"
+        app:layout_constraintBottom_toTopOf="@+id/editNomRegistre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/house_icon" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

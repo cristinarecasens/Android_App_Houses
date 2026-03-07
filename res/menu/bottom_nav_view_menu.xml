@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menuHome"
+        android:icon="@drawable/home"
+        android:title="Inici"
+        />
+    <item
+        android:id="@+id/menuAdd"
+        android:icon="@drawable/addfileinterfacesymbolofpapersheetwithtextlinesandplussign_79821"
+        android:title="Afegir"
+        />
+    <item
+        android:id="@+id/menuFotos"
+        android:icon="@drawable/frame_gallery_image_images_photo_picture_pictures_icon_123209"
+        android:title="Llista"
+        />
+
+</menu>
+

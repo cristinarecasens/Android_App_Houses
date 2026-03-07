@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".ActivityFormulari">
+
+    <Spinner
+        android:id="@+id/spinnerPoblacio"
+        android:layout_width="250dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="1dp"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imatgeRegistre"
+        android:entries="@array/poblacions_array"
+        style="@style/CustomSpinnerStyle"
+        />
+
+    <EditText
+        android:id="@+id/editAdrecaForm"
+        android:layout_width="250dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="20dp"
+        android:hint="Adreça"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#AAAAAA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerPoblacio"
+        android:gravity="center_horizontal"/>
+
+    <EditText
+        android:id="@+id/editPreuForm"
+        android:layout_width="250dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="20dp"
+        android:hint="Preu"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#AAAAAA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editAdrecaForm"
+        android:gravity="center_horizontal"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/editLatForm"
+        android:layout_width="90dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:hint="Latitud"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#AAAAAA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.26"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editPreuForm"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/editLongForm"
+        android:layout_width="90dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:hint="Longitud"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#AAAAAA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.36"
+        app:layout_constraintStart_toEndOf="@+id/editLatForm"
+        app:layout_constraintTop_toBottomOf="@+id/editPreuForm"
+        android:inputType="numberDecimal"/>
+
+    <Button
+        android:id="@+id/botoGuardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:backgroundTint="#338DBC"
+        android:text="Guardar"
+        android:textColorLink="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editLongForm"
+        app:rippleColor="#002C2C2C"
+        app:strokeColor="#005B0000" />
+
+    <ImageView
+        android:id="@+id/imatgeRegistre"
+        android:layout_width="206dp"
+        android:layout_height="136dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="31dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/house_icon" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/barraNave"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#000000"
+        app:itemIconTint="#FFFFFF"
+        app:itemRippleColor="#63b0d8"
+        app:itemTextColor="#FFFFFF"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:itemActiveIndicatorStyle="@style/Theme.BottomNavigationView.ActiveIndicator"
+        app:menu="@menu/bottom_nav_view_menu"
+        >
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

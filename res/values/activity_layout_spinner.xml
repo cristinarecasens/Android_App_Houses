@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string-array name="poblacions_array">
+        <item>Població</item>
+        <item>Barcelona</item>
+        <item>Besalú</item>
+        <item>Cadaqués</item>
+        <item>Calonge</item>
+        <item>Girona</item>
+        <item>Palamós</item>
+    </string-array>
+</resources>
