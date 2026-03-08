@@ -1,5 +1,7 @@
 # 🏠 Idealista Lite — Aplicació d'Immobles
 
+> **Nota:** Aquest repositori conté únicament el codi font (Kotlin + XML) com a mostra del projecte. No inclou fitxers de configuració de Gradle ni dependències, per tant no és clonable directament.
+
 Aplicació Android de cerca i gestió d'immobles en poblacions catalanes. Permet navegar per un catàleg de propietats, veure detalls amb mapa de localització i afegir nous immobles.
 
 ## Captures de pantalla
@@ -35,7 +37,7 @@ Aplicació Android de cerca i gestió d'immobles en poblacions catalanes. Permet
 | **Gson** | Serialització JSON |
 | **AndroidX** | RecyclerView, ConstraintLayout, AppCompat |
 
-## Estructura del projecte
+## Estructura del codi
 
 ```
 app/src/main/
@@ -57,19 +59,6 @@ app/src/main/
 └── AndroidManifest.xml
 ```
 
-## Requisits previs
-
-- **Android Studio** Hedgehog o superior
-- **JDK 11**
-- **Android SDK 34** (API 34)
-- **Dispositiu/Emulador** amb Android 10+ (API 29)
-- Compte de **Google Cloud** amb Maps SDK activat
-- Projecte de **Firebase** configurat
-
-<h2>Demo</h2>
-<p>Check out the app here: <a href="https://appetize.io/app/b_gtrhhib3w3ywy5silcevllrr7m">Android Emulator</a></p>
-
-
 ## Dades de mostra
 
 L'app inclou 6 propietats precàrregades a Palamós:
@@ -83,5 +72,11 @@ L'app inclou 6 propietats precàrregades a Palamós:
 | Carrer Blanc, 102 | 380.000 € |
 | Avinguda del Mar, 10 | 190.000 € |
 
+## Especificacions tècniques
 
-
+| Propietat | Valor |
+|---|---|
+| Min SDK | 29 (Android 10) |
+| Target SDK | 34 (Android 14) |
+| Kotlin | 1.9.24 |
+| Java | 11 |
