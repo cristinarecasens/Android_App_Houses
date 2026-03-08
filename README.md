@@ -66,35 +66,9 @@ app/src/main/
 - Compte de **Google Cloud** amb Maps SDK activat
 - Projecte de **Firebase** configurat
 
-## Instal·lació
+<h2>Demo</h2>
+<p>Check out the app here: <a href="https://appetize.io/app/b_gtrhhib3w3ywy5silcevllrr7m">Android Emulator</a></p>
 
-1. **Clona el repositori**
-   ```bash
-   git clone https://github.com/<el-teu-usuari>/UF2_ActivitatFinal_Part1.git
-   cd UF2_ActivitatFinal_Part1
-   ```
-
-2. **Configura les API Keys**
-
-   Afegeix la teva Google Maps API key a `local.properties`:
-   ```properties
-   MAPS_API_KEY=la_teva_api_key_aquí
-   ```
-
-3. **Configura Firebase**
-
-   Col·loca el teu fitxer `google-services.json` (descarregat des de la consola de Firebase) a la carpeta `app/`.
-
-4. **Obre el projecte** amb Android Studio i sincronitza Gradle.
-
-5. **Executa** l'app en un emulador o dispositiu físic.
-
-## Configuració Firebase
-
-1. Crea un projecte a [Firebase Console](https://console.firebase.google.com/)
-2. Afegeix una app Android amb el package `com.example.uf2_activitatfinal_part1`
-3. Descarrega `google-services.json` i col·loca'l a `app/`
-4. Activa **Realtime Database** al panell de Firebase
 
 ## Dades de mostra
 
@@ -109,12 +83,5 @@ L'app inclou 6 propietats precàrregades a Palamós:
 | Carrer Blanc, 102 | 380.000 € |
 | Avinguda del Mar, 10 | 190.000 € |
 
-## Build
 
-| Propietat | Valor |
-|---|---|
-| Min SDK | 29 (Android 10) |
-| Target SDK | 34 (Android 14) |
-| Kotlin | 1.9.24 |
-| Gradle | 8.7.2 |
-| Java | 11 |
+
