@@ -1,46 +1,46 @@
-# 🏠  Aplicació d'Immobles
+# 🏠  Real Estate Application
 
-> **Nota:** Aquest repositori conté únicament el codi font (Kotlin + XML) com a mostra del projecte. No inclou fitxers de configuració de Gradle ni dependències, per tant no és clonable directament.
+> **Note:** This repository only contains the source code (Kotlin + XML) as a project sample. It does not include Gradle configuration files or dependencies, therefore it cannot be cloned and run directly.
 
-Aplicació Android de cerca i gestió d'immobles en poblacions catalanes. Permet navegar per un catàleg de propietats, veure detalls amb mapa de localització i afegir nous immobles.
+Android application for searching and managing real estate properties in Catalan towns. It allows browsing a catalog of properties, viewing details with a location map, and adding new properties.
 
-## Pantalles disponibles
+## Available Screens
 
-| Splash | Registre | Pantalla principal |
+| Splash | Register | Main Screen |
 |:---:|:---:|:---:|
-| Pantalla de càrrega | Formulari de registre | Carrousel de ciutats i immobles |
+| Loading screen | Registration form | Cities and properties carousel |
 
-| Llista | Detall | Formulari |
+| List | Detail | Form |
 |:---:|:---:|:---:|
-| Grid de propietats | Info + Google Maps | Afegir nou immoble |
+| Property grid | Info + Google Maps | Add new property |
 
 <h2>Demo</h2>
 <p>Check out the app here: <a href="https://appetize.io/app/b_gtrhhib3w3ywy5silcevllrr7m">Android Emulator</a></p>
 
-## Funcionalitats
+## Features
 
-- **Registre d'usuaris** amb validació contra Firebase Realtime Database
-- **Sessió persistent** mitjançant SharedPreferences
-- **Carrousel de ciutats**: Barcelona, Besalú, Cadaqués, Calonge, Girona i Palamós
-- **Carrousel de propietats** amb rotació automàtica (ViewFlipper)
-- **Llistat d'immobles** en RecyclerView amb imatge i preu
-- **Detall de propietat** amb CardView, adreça, preu i mapa Google Maps amb marcador
-- **Formulari** per afegir nous immobles (població, adreça, preu, coordenades)
-- **Navegació inferior** amb 3 pestanyes: Inici, Afegir i Galeria
-- **Filtres** de cerca: Lloguer, Compra, Novetats, Baixada de preu
+- **User registration** with validation against Firebase Realtime Database
+- **Persistent session** using SharedPreferences
+- **Cities carousel**: Barcelona, Besalú, Cadaqués, Calonge, Girona and Palamós
+- **Properties carousel** with automatic rotation (ViewFlipper)
+- **Property listing** in RecyclerView with image and price
+- **Property details** with CardView, address, price and Google Maps map with marker
+- **Form** to add new properties (town, address, price, coordinates)
+- **Bottom navigation** with 3 tabs: Home, Add and Gallery
+- **Search filters**: Rent, Buy, New listings, Price drop
 
-## Tecnologies
+## Technologies
 
-| Tecnologia | Ús |
+| Technology | Usage |
 |---|---|
-| **Kotlin** | Llenguatge principal |
-| **Firebase Realtime Database** | Emmagatzematge d'usuaris |
-| **Google Maps SDK** | Mapa de localització de propietats |
-| **Material Design 3** | Components UI (BottomNavigationView, CardView) |
-| **Gson** | Serialització JSON |
+| **Kotlin** | Main programming language |
+| **Firebase Realtime Database** | User storage |
+| **Google Maps SDK** | Property location map |
+| **Material Design 3** | UI components (BottomNavigationView, CardView) |
+| **Gson** | JSON serialization |
 | **AndroidX** | RecyclerView, ConstraintLayout, AppCompat |
 
-## Estructura del codi
+## Code Structure
 
 ```
 app/src/main/
@@ -62,11 +62,12 @@ app/src/main/
 └── AndroidManifest.xml
 ```
 
-## Dades de mostra
 
-L'app inclou 6 propietats precàrregades a Palamós:
+## Sample Data
 
-| Adreça | Preu |
+The app includes 6 preloaded properties in Palamós:
+
+| Address | Price |
 |---|---|
 | Carrer Blau, 1 | 600.000 € |
 | Avinguda Palamós, 6 | 450.000 € |
@@ -75,9 +76,9 @@ L'app inclou 6 propietats precàrregades a Palamós:
 | Carrer Blanc, 102 | 380.000 € |
 | Avinguda del Mar, 10 | 190.000 € |
 
-## Especificacions tècniques
+## Technical Specifications
 
-| Propietat | Valor |
+| Property | Value |
 |---|---|
 | Min SDK | 29 (Android 10) |
 | Target SDK | 34 (Android 14) |
@@ -86,5 +87,6 @@ L'app inclou 6 propietats precàrregades a Palamós:
 
 ## 👤 Autoria
 Projecte desenvolupat com a treball de DAM2 per a Cristina Recasens.
+
 
 
