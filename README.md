@@ -4,7 +4,7 @@
 
 Aplicació Android de cerca i gestió d'immobles en poblacions catalanes. Permet navegar per un catàleg de propietats, veure detalls amb mapa de localització i afegir nous immobles.
 
-## Captures de pantalla
+## Pantalles disponibles
 
 | Splash | Registre | Pantalla principal |
 |:---:|:---:|:---:|
@@ -13,6 +13,9 @@ Aplicació Android de cerca i gestió d'immobles en poblacions catalanes. Permet
 | Llista | Detall | Formulari |
 |:---:|:---:|:---:|
 | Grid de propietats | Info + Google Maps | Afegir nou immoble |
+
+<h2>Demo</h2>
+<p>Check out the app here: <a href="https://appetize.io/app/b_gtrhhib3w3ywy5silcevllrr7m">Android Emulator</a></p>
 
 ## Funcionalitats
 
@@ -80,3 +83,4 @@ L'app inclou 6 propietats precàrregades a Palamós:
 | Target SDK | 34 (Android 14) |
 | Kotlin | 1.9.24 |
 | Java | 11 |
+
