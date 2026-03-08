@@ -45,20 +45,20 @@ Android application for searching and managing real estate properties in Catalan
 ```
 app/src/main/
 ├── java/com/example/uf2_activitatfinal_part1/
-│   ├── SplashActivity.kt        # Pantalla de càrrega inicial
-│   ├── RegistrerActivity.kt     # Registre d'usuaris
-│   ├── MainActivity.kt          # Pantalla principal amb carrousels
-│   ├── ActivityLlista.kt        # Llistat de propietats (RecyclerView)
-│   ├── ActivityFormulari.kt     # Formulari per afegir immobles
-│   ├── InfoActivity.kt          # Detall de propietat amb mapa
-│   ├── Casa.kt                  # Model de dades d'immoble
-│   ├── Usuari.kt                # Model de dades d'usuari
-│   ├── ArrayCases.kt            # Singleton amb llistat de propietats
-│   └── RecyclerViewAdapter.kt   # Adapter del RecyclerView
+│   ├── SplashActivity.kt        # Initial loading screen
+│   ├── RegistrerActivity.kt     # User registration
+│   ├── MainActivity.kt          # Main screen with carousels
+│   ├── ActivityLlista.kt        # Property list (RecyclerView)
+│   ├── ActivityFormulari.kt     # Form to add properties
+│   ├── InfoActivity.kt          # Property details with map
+│   ├── Casa.kt                  # Property data model
+│   ├── Usuari.kt                # User data model
+│   ├── ArrayCases.kt            # Singleton with property list
+│   └── RecyclerViewAdapter.kt   # RecyclerView adapter
 ├── res/
-│   ├── layout/                  # Layouts XML
-│   ├── drawable/                # Imatges de ciutats i cases
-│   └── values/                  # Strings, temes, colors
+│   ├── layout/                  # XML layouts
+│   ├── drawable/                # City and house images
+│   └── values/                  # Strings, themes, colors
 └── AndroidManifest.xml
 ```
 
@@ -87,6 +87,7 @@ The app includes 6 preloaded properties in Palamós:
 
 ## 👤 Autoria
 Projecte desenvolupat com a treball de DAM2 per a Cristina Recasens.
+
 
 
 
