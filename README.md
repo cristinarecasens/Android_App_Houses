@@ -1,4 +1,4 @@
-# 🏠 Idealista Lite — Aplicació d'Immobles
+# 🏠  Aplicació d'Immobles
 
 > **Nota:** Aquest repositori conté únicament el codi font (Kotlin + XML) com a mostra del projecte. No inclou fitxers de configuració de Gradle ni dependències, per tant no és clonable directament.
 
@@ -83,4 +83,8 @@ L'app inclou 6 propietats precàrregades a Palamós:
 | Target SDK | 34 (Android 14) |
 | Kotlin | 1.9.24 |
 | Java | 11 |
+
+## 👤 Autoria
+Projecte desenvolupat com a treball de DAM2 per a Cristina Recasens.
+
 
